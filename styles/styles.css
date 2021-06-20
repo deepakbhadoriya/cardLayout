@@ -1,0 +1,84 @@
+:root {
+  --white: #ffffff;
+  --dark: #333333;
+  --medium: #666666;
+  --green: #4ed17b;
+  --light: #e2e2e2;
+}
+
+.row {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardContainer {
+  border: 1px solid var(--light);
+  margin: 0px 10px;
+  width: 300px;
+}
+
+.cardImage {
+  height: 205px;
+  width: 300px;
+  /* Fallback color */
+  background-color: var(--light);
+  background: url('../images/boots.png') no-repeat center;
+  background-size: cover;
+}
+
+.cardContent {
+  padding: 30px 25px;
+}
+.cardContent h2 {
+  color: var(--dark);
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 900;
+  width: 180px;
+}
+.cardContent p {
+  color: var(--medium);
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+}
+
+.priceNcart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  color: var(--dark);
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 900;
+  width: 180px;
+}
+
+.cartButton {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 50px;
+  background-color: var(--green);
+  border-radius: 5px;
+  align-items: center;
+}
+
+@media (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .cardContainer {
+    margin: 20px 0px;
+  }
+}
